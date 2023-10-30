@@ -33,7 +33,7 @@ public class CameraScroll : MonoBehaviour
         {
             if(lockCamera)
             {
-                finalPos = transform.position;
+                finalPos = new Vector3(lrCircle.position.x, lrCircle.position.y, transform.position.z);
             }
             lockCamera = !lockCamera;
         }
